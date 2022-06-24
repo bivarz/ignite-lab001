@@ -2,6 +2,6 @@
 Ignite Lab week
 
 Tailwind
-GraphQl
-Typescript
-React
+GraphQL -
+Typescript -
+React -
