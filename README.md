@@ -6,4 +6,4 @@ GraphQL -
 Typescript -
 React -
 DateFNS -
-phosphor-React
+Phosphor-React
