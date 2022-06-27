@@ -1,9 +1,13 @@
 import React from 'react';
 
-// import { Container } from './styles';
 
-const components: React.FC = () => {
-  return <div />;
+
+const Video: React.FC = () => {
+  return (
+    <div className="flex-1">
+      Video
+    </div>
+  );
 }
 
-export default components;
+export default Video;
