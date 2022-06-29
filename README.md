@@ -7,4 +7,4 @@ Typescript -
 React -
 DateFNS -
 Phosphor React -
-VimeJs -
+VimeJs 
