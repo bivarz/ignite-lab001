@@ -1,8 +1,25 @@
 import { DefaultUi, Player, Youtube } from '@vime/react'
+import { gql, useQuery } from '@apollo/client'
 import {DiscordLogo, Lightning, FileArrowDown, CaretRight, ImageSquare } from 'phosphor-react'
 import "@vime/core/themes/default.css" 
 
-const Video: React.FC = () => {
+const GET_VIDEO_QUERY = gql`
+  query  {
+  lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
+    id
+    lessonType
+    slug
+    title
+    availableAt
+  }
+}
+`
+interface VideoProps {
+  lessonSlug: string
+}
+
+export function Video (props: VideoProps) {
+
   return (
     <div className="flex-1">
       <div className="bg-black  flex justify-center">
@@ -82,4 +99,3 @@ const Video: React.FC = () => {
   );
 }
 
-export default Video;
